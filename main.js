@@ -13,16 +13,16 @@ addUp(600) ➞ 180300
 */
 
 
-function addUp(num) {
+function addUp1(num) {
   return (num * (num + 1)) / 2;
 }
 
-console.log(addUp(4));     
-console.log(addUp(13));    
-console.log(addUp(600));   
+console.log(addUp1(4));     
+console.log(addUp1(13));    
+console.log(addUp1(600));   
 
 
-const addUp = (num) => {
+const addUp2 = (num) => {
     let result = 0;
     for (let i = 0; i <= num; i++) {
       result += i;
@@ -30,24 +30,24 @@ const addUp = (num) => {
     return result;
   };
   
-  let resultTask6 = addUp(4);
+  let resultTask6 = addUp2(4);
   console.log(resultTask6); // 10
   
-  resultTask6 = addUp(13);
+  resultTask6 = addUp2(13);
   console.log(resultTask6); // 91
   
-  resultTask6 = addUp(600);
+  resultTask6 = addUp2(600);
   console.log(resultTask6); // 180300
 
 
-function addUp(number) {
+function addUp3(number) {
     if (number === 0) return 0;
     else {
-      return number + addUp(number - 1);
+      return number + addUp3(number - 1);
     }
   }
   
-  console.log(addUp(4)); // ➞ 10
-  console.log(addUp(13)); // ➞ 91
+  console.log(addUp3(4)); // ➞ 10
+  console.log(addUp3(13)); // ➞ 91
   
-  console.log(addUp(600)); // ➞ 180300
+  console.log(addUp3(600)); // ➞ 180300
