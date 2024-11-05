@@ -12,6 +12,7 @@ addUp(600) ➞ 180300
 
 */
 
+
 const addUp = (num) => {
     let result = 0;
     for (let i = 0; i <= num; i++) {
@@ -28,3 +29,18 @@ const addUp = (num) => {
   
   resultTask6 = addUp(600);
   console.log(resultTask6); // 180300
+
+
+function addUp(number) {
+    if (number === 0) return 0;
+    else {
+      return number + addUp(number - 1);
+    }
+  }
+  
+  console.log(addUp(4)); // ➞ 10
+  
+  console.log(addUp(13)); // ➞ 91
+  
+  console.log(addUp(600)); // ➞ 180300
+
