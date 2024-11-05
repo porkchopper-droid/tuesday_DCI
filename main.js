@@ -53,4 +53,5 @@ function addUp3(number) {
   console.log(addUp3(600)); // ➞ 180300
 
   // I added this line to test
-  
+  // I added this line to test
+
